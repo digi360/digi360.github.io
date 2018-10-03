@@ -9,7 +9,7 @@
     font-size: 1.2em;
     line-height: 1.5;
     padding: 20px;
-    background: #d0cfc5;
+    background: cyan;
   }
    
   .container nav {
@@ -59,7 +59,7 @@ nav ul li {
   }
     
   li a {
-    color: #fff;
+    color: coral;
   }
   
   li:hover,
