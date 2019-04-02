@@ -2,29 +2,28 @@ $(document).ready(function ()
 {
     $("#search-engine").click(function (e) {
         e.preventDefault();
-        let mainSec = $("main");
-        let theFrame = '<iframe src="https://github.com/digi360/FindItSearchEngine/blob/master/findit.html">Your browser does not support iframes. Please upgrade and refresh to see this page. Alternatively, you can press the back button.</iframe>'
-        $("#main").html(theFrame);
+        showInFrame("https://digi360.github.io/FindItSearchEngine/");
     });
     $("#crime-stats").click(function(e)
     {
         e.preventDefault();
-        let mainSec = $("main");
-        let theFrame = '<iframe src="portfolio/Crime_Stats_Group_Work.html">Your browser does not support iframes. Please upgrade and refresh to see this page. Alternatively, you can press the back button.</iframe>'
-        $("#main").html(theFrame);
+        showInFrame("portfolio/Crime_Stats_Group_Work.html")
     });
     $("#salary1").click(function(e)
     {
         e.preventDefault();
-        let mainSec = $("main");
-        let theFrame = '<iframe src="portfolio/Salary_Assignment1_Correlation.html">Your browser does not support iframes. Please upgrade and refresh to see this page. Alternatively, you can press the back button.</iframe>'
-        $("#main").html(theFrame);
+        showInFrame("portfolio/Salary_Assignment1_Correlation.html")
     });
     $("#salary2").click(function(e)
     {
         e.preventDefault();
-        let mainSec = $("main");
-        let theFrame = '<iframe src="portfolio/Salary_Assignment2_Regression.html">Your browser does not support iframes. Please upgrade and refresh to see this page. Alternatively, you can press the back button.</iframe>'
-        $("#main").html(theFrame);
+        showInFrame("portfolio/Salary_Assignment2_Regression.html")
     });
+
+    function showInFrame(link)
+    {
+        let mainSec = $("main");
+        let theFrame = '<iframe src="' + link + '">Your browser does not support iframes. Please upgrade and refresh to see this page. Alternatively, you can press the back button.</iframe>'
+        $("#main").html(theFrame);
+    }
 });
