@@ -9,11 +9,11 @@
     font-size: 1.2em;
     line-height: 1.5;
     padding: 20px;
-    background: cyan;
+    background: #d2cf13;
   }
    
   .container nav {
-    background: #136fd2;
+    background: lawngreen;
   }
    
   nav ul {
@@ -23,7 +23,7 @@
   }
    
   nav a {
-    color: #d0cfc5
+    color: rebeccapurple;
   }
    
   nav a:hover {
@@ -90,7 +90,7 @@ nav ul li {
   }
   
   ul li ul li {
-    background: lightblue;
+    background: saddlebrown;
     clear: both;
     width: 100%;
   }
